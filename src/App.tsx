@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useCallback, useEffect, useRef } from "react";
+import React, { useState, useMemo, useCallback, useEffect } from "react";
 import { Editor, DiffEditor } from "@monaco-editor/react";
 import { alignJsonKeyOrder, safeParseJson } from "./utils";
 
