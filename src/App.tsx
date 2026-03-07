@@ -188,7 +188,7 @@ const DiffView: React.FC<DiffViewProps> = ({ oldJson, newJson, monacoTheme }) =>
 // ─── App ─────────────────────────────────────────────────────────────────────
 
 export default function App() {
-  const [theme, setTheme] = useState<Theme>("light");
+  const [theme, setTheme] = useState<Theme>("dark");
   const [viewMode, setViewMode] = useState<ViewMode>("input");
   const [originalText, setOriginalText] = useState(SAMPLE_ORIGINAL);
   const [updatedText, setUpdatedText] = useState(SAMPLE_UPDATED);
@@ -328,9 +328,8 @@ export default function App() {
         )}
       </main>
 
-      {/* Footer */}
       <footer className="footer">
-        JSON Diff Visualizer — powered by Monaco Editor &nbsp;·&nbsp; Side-by-Side &amp; Unified diff
+        Compare &amp; visualize JSON side-by-side or unified
       </footer>
     </div>
   );
