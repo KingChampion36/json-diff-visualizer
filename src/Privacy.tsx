@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 function getTheme(): "light" | "dark" {
   return document.documentElement.getAttribute("data-theme") === "light"
