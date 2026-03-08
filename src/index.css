@@ -327,11 +327,98 @@ html, body, #root {
   margin: 0 4px;
 }
 
+/* Docs page */
+.docs-main {
+  overflow-y: auto;
+}
+
+.docs-content {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 8px 0 48px;
+}
+
+.docs-content h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.docs-lead {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+}
+
+.docs-content section {
+  margin-bottom: 28px;
+}
+
+.docs-content h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--text-primary);
+}
+
+.docs-content p,
+.docs-content ul {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+
+.docs-content ul {
+  padding-left: 24px;
+  margin-top: 8px;
+}
+
+.docs-content li {
+  margin-bottom: 6px;
+}
+
+.docs-content strong {
+  color: var(--text-primary);
+}
+
+.docs-back {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.faq-list {
+  margin: 0 0 24px;
+}
+
+.faq-q {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 20px 0 8px;
+}
+
+.faq-q:first-of-type {
+  margin-top: 0;
+}
+
+.faq-a {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin: 0 0 4px;
+  padding-left: 0;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .input-grid { grid-template-columns: 1fr; }
   .main { padding: 12px; }
   .header { padding: 0 12px; }
   .header-title { font-size: 14px; }
+  .docs-content { padding: 8px 0 32px; }
+  .docs-content h1 { font-size: 22px; }
 }
 

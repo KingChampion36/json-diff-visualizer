@@ -256,6 +256,27 @@ export default function App() {
           {viewMode === "diff" && <span className="badge">Diff View</span>}
         </div>
         <div className="header-right">
+          <a
+            href="#/docs"
+            className="btn btn-sm btn-ghost"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            Docs
+          </a>
+          <a
+            href="#/faq"
+            className="btn btn-sm btn-ghost"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            FAQ
+          </a>
+          <a
+            href="#/privacy"
+            className="btn btn-sm btn-ghost"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            Privacy
+          </a>
           <button className="btn btn-sm btn-ghost" onClick={handleLoadSample}>
             Sample
           </button>
@@ -329,6 +350,12 @@ export default function App() {
       </main>
 
       <footer className="footer">
+        <a href="#/docs" style={{ color: "var(--accent)", textDecoration: "none" }}>Docs</a>
+        {" · "}
+        <a href="#/faq" style={{ color: "var(--accent)", textDecoration: "none" }}>FAQ</a>
+        {" · "}
+        <a href="#/privacy" style={{ color: "var(--accent)", textDecoration: "none" }}>Privacy</a>
+        {" · "}
         Compare &amp; visualize JSON side-by-side or unified
       </footer>
     </div>
